@@ -1,19 +1,49 @@
 [
     {
         "name": "YTREUP",
-        "short_description": "A we app created to automatically re upload youtube videos",
+        "short_description": "A web app created to automatically re upload youtube videos",
+        "description": "YTREUP is a web app that connects to the user youtube acount, and reupload any youtube video. No download of the video is required, the server handles all the heavy work.",
+        "role": "Full stack develloper",
+        "tech": [
+            "Language: Node.js",
+            "Framework: React; Redux",
+            "Server: Heroku",
+            "Database: MongoDB",
+            "Version Control: Github Private",
+            "Continous Delivery: Heroku Pipelines + Github Integration",
+            "Security: Oauth 2.0 + YutubeAPI"
+        ],
         "image":"./ytreup.png",
         "link": "http://ytreup.com"
     },
     {
         "name": "SolitaireX",
         "short_description": "A cool twist based on the popular solitaire game",
+        "description": "SolitaireX is a simple card game, based on the famous solitaire game, and heavly inspired in the Zachtronics twist. The game was designed for android devices.",
+        "role": "Programmer and Designer",
+        "tech": [
+            "Language: C#",
+            "Engine: Unity",
+            "Leadboards: Google Play Services",
+            "Security: Google Play Services",
+            "Delivery: Google Play Store",
+            "Version Control: Unity Collab"
+        ],
         "image":"./solitairex.png",
         "link": "https://play.google.com/store/apps/details?id=com.scawdev.SolitaireX"
     },
     {
         "name": "Muvuca Games",
         "short_description": "A colaborative group to create games",
+        "description": "Muvuca Games was a project created to join people with the purpose of develloping games. I had more than 350 users, devided in art, design, and programing areas",
+        "role": "I was the lead develloper, managing the programmers. I was in charge of 25+ people, of all kind of programming knowlage levels, and was in charge to guide them.",
+        "tech": [
+            "Language: C#",
+            "Engine: Unity",
+            "Version Control: Github",
+            "Management Framework: Scrumban",
+            "Communications: Slack"
+        ],
         "image":"./muvuca.png",
         "link": "https://trello.com/muvucagames"
     }
