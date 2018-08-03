@@ -1,0 +1,20 @@
+[
+    {
+        "name": "YTREUP",
+        "short_description": "A we app created to automatically re upload youtube videos",
+        "image":"./ytreup.png",
+        "link": "http://ytreup.com"
+    },
+    {
+        "name": "SolitaireX",
+        "short_description": "A cool twist based on the popular solitaire game",
+        "image":"./solitairex.png",
+        "link": "https://play.google.com/store/apps/details?id=com.scawdev.SolitaireX"
+    },
+    {
+        "name": "Muvuca Games",
+        "short_description": "A colaborative group to create games",
+        "image":"./muvuca.png",
+        "link": "https://trello.com/muvucagames"
+    }
+]
