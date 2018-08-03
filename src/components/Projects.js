@@ -13,6 +13,7 @@ import {
     Button,
     Jumbotron
 } from 'reactstrap';
+import ReactMarkdown from 'react-markdown';
 
 const items = require('./../projects.json');
 
@@ -47,7 +48,12 @@ const ProjectHighlight = (props) => {
             <Row>
                 <Col>
                     <Jumbotron>
-                        <h2>{props.project.name}</h2>
+                        <h1>{props.project.name}</h1>
+                        <p>{props.project.description}</p>
+                        <hr className="my-2" />
+                        <p>{props.project.role}</p>
+                        <hr className="my-2" />
+                        <ReactMarkdown source={props.project.tech.join('\r\n')} />
                         <Button color="link" onClick={()=>{window.open(props.project.link)}}>link</Button>
                     </Jumbotron>
                 </Col>
