@@ -12,7 +12,17 @@ import {
     Col,
     Jumbotron
 } from 'reactstrap';
-import Projects from './components/Projects'
+import P5Wrapper from 'react-p5-wrapper';
+import Projects from './components/Projects';
+import LandingPageSketch from './sketches/LandingPageSketch';
+
+
+const canvasStyle = {
+    position: 'fixed',
+    top: '0px',
+    left: '0px',
+    zIndex: '-1'
+}
 
 class App extends Component {
     constructor(props) {
@@ -28,6 +38,7 @@ class App extends Component {
             isOpen: !this.state.isOpen
         });
     }
+
     render() {
         return (
             <div>
@@ -58,6 +69,9 @@ class App extends Component {
                         </Col>
                     </Row>
                 </Container>
+                <div style={canvasStyle}>
+                    <P5Wrapper sketch={LandingPageSketch} />
+                </div>
             </div>
         );
     }
