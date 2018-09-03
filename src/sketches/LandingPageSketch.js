@@ -2,7 +2,7 @@ import "p5/lib/addons/p5.dom"
 export default function sketch (p) {
     let canvas;
     let dots = [];
-    const dotsSize = 50;
+    const dotsSize = 10;
     const linkSize = 100;
     p.windowResized = () => {
         p.resizeCanvas(p.windowWidth, p.windowHeight);
@@ -21,12 +21,22 @@ export default function sketch (p) {
         dots.forEach(e => e.draw());
 
         //console.log(p.frameRate());
+        let fps = p.frameRate();
+        fps > 60 ? addDot(): fps < 40 && (removeDot());
     };
 
     const createDots = () => {
         for (var i = 0; i < dotsSize; i++) {
             dots[i] = new Dot();
         }
+    }
+
+    const addDot = () => {
+        dots.push(new Dot());
+    }
+
+    const removeDot = () => {
+        dots.pop();
     }
 
     class Dot{
