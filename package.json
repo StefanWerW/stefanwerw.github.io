@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://stefanwerw.github.io",
   "dependencies": {
+    "@fullpage/react-fullpage": "0.0.7",
     "bootstrap": "^4.1.3",
     "gh-pages": "^1.2.0",
     "react": "^16.4.1",

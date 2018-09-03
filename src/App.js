@@ -14,8 +14,9 @@ import {
 } from 'reactstrap';
 import P5Wrapper from 'react-p5-wrapper';
 import Projects from './components/Projects';
-import LandingPageSketch from './sketches/LandingPageSketch';
-
+import BackgroundSketch from './sketches/BackgroundSketch';
+import { LandingPage } from './pages'
+import ReactFullpage from '@fullpage/react-fullpage';
 
 const canvasStyle = {
     position: 'fixed',
@@ -56,21 +57,30 @@ class App extends Component {
                         </Nav>
                     </Collapse>
                 </Navbar>
+                <ReactFullpage
+                    render={({ state, fullpageApi}) => {
+                        return(
+                            <div>
+                                <div className="section">
+                                    <LandingPage />
+                                </div>
 
-                <Container>
-                    <Row>
-                        <Col>
-                            <h1 className="display-1 text-center">SCAW.dev Projects</h1>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <Projects />
-                        </Col>
-                    </Row>
-                </Container>
+                                <div className="section">
+                                    <Container>
+                                        <Row>
+                                            <Col>
+                                                <Projects />
+                                            </Col>
+                                        </Row>
+                                    </Container>
+                                </div>
+                            </div>
+                        );
+                    }}
+                />
+
                 <div style={canvasStyle}>
-                    <P5Wrapper sketch={LandingPageSketch} />
+                    <P5Wrapper sketch={BackgroundSketch} />
                 </div>
             </div>
         );
